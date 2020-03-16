@@ -1,0 +1,337 @@
+@media only screen and (max-width: 1199px) {
+  ul.secondary-navigation {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 4em; }
+    ul.secondary-navigation li {
+      display: inline-block;
+      margin: 0 5% 3% 5%; }
+      ul.secondary-navigation li:first-of-type {
+        margin: 0 5% 3% 0; }
+      ul.secondary-navigation li:last-of-type {
+        margin: 0 0 3% 5%; }
+      ul.secondary-navigation li a {
+        color: #ddd;
+        font-size: 20px;
+        transition: 1s; }
+        ul.secondary-navigation li a:hover {
+          color: #eee;
+          text-decoration: none; }
+
+  div.text-div p.lead {
+    font-size: 23px;
+    line-height: 45px; } }
+@media only screen and (max-width: 991px) {
+  .addmargin {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .addbottomargin {
+    margin-bottom: 20px; }
+
+  .addtopmargin {
+    margin-top: 20px; } }
+@media only screen and (max-width: 980px) {
+  div.text-div p.lead {
+    font-size: 23px; }
+
+  .second-slide p.lead {
+    margin-bottom: 0; }
+
+  .doo {
+    margin-bottom: 40px; }
+
+  .second-slide .ok {
+    margin-bottom: 20px; } }
+@media only screen and (max-width: 920px) {
+  ul.secondary-navigation li {
+    display: inline-block;
+    margin: 0 4.5% 3% 4.5%; }
+    ul.secondary-navigation li:first-of-type {
+      margin: 0 4.5% 3% 0; }
+    ul.secondary-navigation li:last-of-type {
+      margin: 0 0 3% 4.5%; }
+
+  p.larger {
+    font-size: 33px;
+    line-height: 40px; }
+  p.ok {
+    font-size: 17px;
+    color: #aaa; }
+
+  .second-slide p.lead {
+    font-size: 18px; }
+  .second-slide .little-margin {
+    margin-top: 0.5em; } }
+@media only screen and (max-width: 820px) {
+  ul.secondary-navigation li {
+    display: inline-block;
+    margin: 0 4% 3% 4%; }
+    ul.secondary-navigation li:first-of-type {
+      margin: 0 4% 3% 0; }
+    ul.secondary-navigation li:last-of-type {
+      margin: 0 0 3% 4%; }
+
+  div.text-div p.lead {
+    font-size: 20px; }
+
+  p {
+    font-size: 15px; } }
+@media only screen and (max-width: 799px) {
+  p.larger {
+    font-size: 24px; }
+
+  .ok {
+    font-size: 18px; } }
+@media only screen and (max-width: 767px) {
+  nav.transparent_navigation ul.navigation_ul li:not(.logo) a {
+    font-size: 16px; }
+  nav.transparent_navigation ul.navigation_ul li:not(.logo):hover a, nav.transparent_navigation ul.navigation_ul li:not(.logo) a:hover {
+    font-size: 16.5px; }
+
+  .firstfooter p.lead {
+    font-size: 22px; }
+
+  .addtabbottommargin {
+    margin-bottom: 4em; }
+
+  div.third-slide div.container div.row.little-margin.nophonemargin {
+    margin-top: 0; }
+
+  ul.secondary-navigation li {
+    display: inline-block;
+    margin: 0 2.5% 3% 4.5%; }
+    ul.secondary-navigation li:first-of-type {
+      margin: 0 2.5% 3% 0; }
+    ul.secondary-navigation li:last-of-type {
+      margin: 0 0 3% 2.5%; }
+
+  div.text-div p.lead {
+    font-size: 22px;
+    line-height: 50px; } }
+@media only screen and (max-width: 699px) {
+  nav.transparent_navigation ul.navigation_ul li:not(.logo) a {
+    font-size: 15px; }
+    nav.transparent_navigation ul.navigation_ul li:not(.logo) a:hover {
+      font-size: 14.5px; }
+  nav.transparent_navigation ul.navigation_ul li:not(.logo):hover a {
+    font-size: 14.5px; } }
+@media only screen and (max-width: 665px) {
+  .bannertext {
+    color: white;
+    z-index: 8;
+    font-size: 60px;
+    word-spacing: 20px;
+    font-family: "Monoton", cursive; }
+
+  div.content {
+    transform: translateY(12.5%); }
+
+  p.margin {
+    margin-top: -10%; }
+
+  div.content p.lead {
+    color: #eee;
+    font-size: 25px; }
+
+  nav.transparent_navigation {
+    display: none; }
+  nav.transparent_responsive_bar .menu-list {
+    width: 100%;
+    margin: 0;
+    padding: 1%; }
+  nav.transparent_responsive_bar li {
+    display: inline; }
+
+  .menu-list {
+    height: 90px; }
+
+  span.helper {
+    height: 90px;
+    vertical-align: middle;
+    display: inline-block; }
+
+  nav.transparent_responsive_bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 90;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none; }
+    nav.transparent_responsive_bar li:first-of-type img {
+      height: 90px;
+      width: auto; }
+
+  ul.secondary-navigation li {
+    display: inline-block;
+    margin: 0 2% 3% 2%; }
+    ul.secondary-navigation li:first-of-type {
+      margin: 0 2% 3% 0; }
+    ul.secondary-navigation li:last-of-type {
+      margin: 0 0 3% 2%; } }
+@media only screen and (min-width: 666px) {
+  nav.transparent_responsive_bar {
+    display: none; }
+  nav.transparent_navigation {
+    display: block; } }
+@media only screen and (min-width: 651px) {
+  nav.responsivenavbar {
+    display: none; } }
+@media only screen and (max-width: 650px) {
+  nav.opaque_navigation {
+    display: none !important; }
+    nav.opaque_navigation ul {
+      display: none; }
+  nav.responsivenavbar {
+    font-family: "Open Sans", sans-serif; } }
+@media only screen and (min-width: 600px) {
+  .topupmarginn {
+    margin-top: 30px; } }
+@media only screen and (max-width: 600px) {
+  [class*="col-xs"] {
+    margin-bottom: 20px; }
+
+  .bannertext {
+    color: white;
+    z-index: 8;
+    font-size: 55px;
+    word-spacing: 17.5px;
+    width: 100%;
+    text-align: center;
+    font-family: "Monoton", cursive; } }
+@media only screen and (max-width: 568px) {
+  .secondary-navigation {
+    display: none; } }
+@media only screen and (max-width: 533px) {
+  h1.bannertext {
+    font-size: 52.5px;
+    word-spacing: 17.5px; }
+
+  div.content {
+    text-align: center; }
+
+  ul.animated {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%; }
+    ul.animated li {
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+
+  div.content p.lead {
+    font-size: 23px; }
+
+  p.margin {
+    margin-top: -15%; } }
+@media only screen and (max-width: 480px) {
+  h1.bannertext {
+    font-size: 48px;
+    word-spacing: 17.5px; }
+
+  div.content p.lead {
+    font-size: 20px; }
+
+  .phone-centered {
+    text-align: center; }
+
+  ul.contact-info li {
+    padding-left: 0;
+    margin: 20px 0; }
+
+  .reasons li::before {
+    content: ".";
+    font-family: "FontAwesome", sans-serif;
+    float: left;
+    color: white;
+    font-size: 1px;
+    background-color: #01AEF0;
+    padding: 1%;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 1.5%;
+    position: relative;
+    top: 12px; } }
+@media only screen and (max-width: 429px) {
+  .secondfooter {
+    font-size: 16px; }
+
+  h1.bannertext {
+    font-size: 40px;
+    word-spacing: 17.5px; }
+
+  div.content p.lead {
+    font-size: 17px; } }
+@media only screen and (max-width: 380px) {
+  div.content p.lead {
+    font-size: 16px; }
+
+  h1.bannertext {
+    font-size: 38px;
+    word-spacing: 17.5px; }
+
+  p {
+    font-size: 16px; }
+    p a {
+      font-size: 16px; }
+
+  ul.reasons p {
+    font-size: 16px; }
+
+  p a, p.ok, p.talk {
+    font-size: 16px; }
+
+  div.forms .half, div.forms .full {
+    font-size: 16px; } }
+@media only screen and (max-width: 360px) {
+  .secondfooter {
+    font-size: 14px; }
+
+  h1.bannertext {
+    font-size: 36px;
+    word-spacing: 17.5px; }
+
+  div.content p.lead {
+    font-size: 15px; }
+
+  p {
+    font-size: 15px; }
+    p a {
+      font-size: 15px; }
+
+  ul.reasons p, p.ok {
+    font-size: 15px; }
+
+  div.fifth-slide p.talk {
+    font-size: 15px; }
+  div.forms input:not([type="submit"]), div.forms textarea {
+    font-size: 15px; } }
+@media only screen and (max-width: 500px) {
+  div.forms .half {
+    width: 48%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    transition: 1s; }
+    div.forms .half:nth-of-type(odd) {
+      margin-left: 0;
+      margin-right: 1%; }
+    div.forms .half:nth-of-type(even) {
+      margin-right: 0;
+      margin-left: 1%; }
+  div.forms .full {
+    max-width: 100%;
+    min-width: 100%;
+    transition: 1s; } }
+@media only screen and (max-height: 499px) and (max-width: 410px) {
+  div.content {
+    transform: translateY(1%); } }
+/*# sourceMappingURL=responsive.css.map */
+
+/*# sourceMappingURL=responsive.css.map */

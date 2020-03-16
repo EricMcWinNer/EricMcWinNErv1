@@ -1,0 +1,72 @@
+@mixin keyframes($name)
+  @keyframes #{$name}
+    @content
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-o-keyframes #{name}
+    @content
+@mixin animation($animation...)
+  animation: #{$animation}
+  -webkit-animation: #{$animation}
+  -moz-animation: #{$animation}
+  -o-animation: #{$animation}
+@font-face
+  src: url('../../fonts/Audrey-Bold.otf')
+  font-family: "Audrey Bold"
+@font-face
+  src: url('../../fonts/Audrey-BoldOblique.otf')
+  font-family: "Audrey Bold Oblique"
+.background_image
+  width: 100%
+  min-height: 100vh
+  background: url('../flying-through-space.gif') no-repeat center
+  background-size: cover
+  color: #f6f6f6
+  align-content: center
+.main_content
+  .row
+    margin-top: 20px
+  p
+    font:
+      family: 'Open Sans', sans-serif
+      size: 19px
+    line-height: 180%
+    text-align: center
+    a
+      text-decoration: underline
+  width: 100%
+  padding: 20px
+  margin-top: 20px
+  h1
+    font:
+      family: 'Gudea', sans-serif
+      size: 45px
+    text-align: center
+.logo
+  height: 70px
+  border-radius: 9px
+  transform: rotate(-90deg)
+  display: block
+  margin: 0 auto
+  +animation(errorlogo 15s linear infinite)
++keyframes(errorlogo)
+  50%
+    transform: rotate(0deg) scale(0.1)
+    opacity: 0.1
+.top_right
+  p
+    font:
+      family: 'Open Sans', sans-serif
+      size: 19px
+.full-width
+  position: absolute
+  bottom: 12px
+  width: 100%
+  text-align: center
+  a
+    color: #f6f6f6
+    font:
+      family: "Open Sans", sans-serif
+      size: 16px

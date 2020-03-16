@@ -1,0 +1,462 @@
+.floatRight
+  float: right
+
+.floatLeft
+  float: left
+
+.fullWidth
+  width: 100%
+  &.scrollX
+    overflow-x: scroll
+  &.invisible
+    display: none
+    *
+      display: none
+  &.scrollY
+    overflow-y: scroll
+
+.fullHeight
+  height: 100vh
+
+.fullScreen
+  height: 100vh
+  width: 100%
+
+.noPadding
+  padding: 0
+
+.noPaddingVertical
+  padding-top: 0
+  padding-bottom: 0
+
+.noPaddingHorizontal
+  padding-left: 0
+  padding-right: 0
+
+.noMargin
+  margin: 0
+
+.noMarginBottom
+  margin-bottom: 0
+
+.noMarginVertical
+  margin-top: 0
+  margin-bottom: 0
+
+.noMarginHorizontal
+  margin-left: 0
+  margin-right: 0
+
+.floatLeft
+  float: left
+
+.floatRight
+  float: right
+
+.clearFloat
+  clear: both
+
+.upperCase
+  text-transform: uppercase
+
+.capitalize
+  text-transform: capitalize
+
+a
+  &.underline
+    text-decoration: underline
+    &:hover
+      text-decoration: underline
+  &.hoverUnderline
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  &.noUnderline
+    text-decoration: none
+    &:hover
+      text-decoration: none
+
+=noPadding($var)
+  @if $var == "top"
+    padding-top: 0
+  @else if $var == "left"
+    padding-left: 0
+  @else if $var == "bottom"
+    padding-bottom: 0
+  @else if $var == "right"
+    padding-right: 0
+  @else
+    padding: 0
+
+=noMargin($var)
+  @if $var == "top"
+    margin-top: 0
+  @else if $var == "left"
+    margin-left: 0
+  @else if $var == "bottom"
+    margin-bottom: 0
+  @else if $var == right
+    margin-right: 0
+  @else
+    margin: 0
+
+.fullScreen
+  width: 100%
+  height: 100vh
+
+=background($var)
+  background-color: #{$var}
+
+=transition($var)
+  -webkit-transition: #{$var}
+  -moz-transition: #{$var}
+  -o-transition: #{$var}
+  transition: #{$var}
+
+=transform($var)
+  transform: #{$var}
+  -webkit-transform: #{$var}
+  -o-transition: #{$var}
+  -moz-transition: #{$var}
+
+=keyframes($name)
+  @-ms-keyframes #{$name}
+    @content
+  @-khtml-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-webkit-keyframes #{name}
+    @content
+  @-o-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=animation($var)
+  animation: #{$var}
+  -webkit-animation: #{$var}
+  -moz-animation: #{$var}
+  -o-animation: #{$var}
+
+ul
+  margin: 0
+  padding: 0
+
+.marginTop
+  margin-top: 10px
+  &.L
+    margin-top: 30px
+  &.XL
+    margin-top: 50px
+  &.XXL
+    margin-top: 100px
+  &.HUMONGOUS
+    margin-top: 150px
+
+p
+  line-height: 170%
+  font-size: 15px
+
+.whiteForeground
+  color: white
+  *
+    color: white
+
+.ghostButton
+  display: inline-block
+  background-color: transparent
+  border: 1px solid white
+  color: white
+  padding: 13px 30px
+  border-radius: 900px
+  font-size: 15px
+
+.alignLeft
+  text-align: left
+
+.alignRight
+  text-align: right
+
+@font-face
+  src: url("../lib/fonts/OpenSans.ttf")
+  font-family: "Open Sans"
+
+@font-face
+  src: url("../lib/fonts/OpenSans-Bold.ttf")
+  font-family: "Open Sans Bold"
+
+@font-face
+  src: url("../lib/fonts/SegoeUIL.ttf")
+  font-family: "Segoe UI Light"
+
+@font-face
+  src: url("../lib/fonts/Montserrat-Regular.ttf")
+  font-family: "Montserrat"
+
+@font-face
+  src: url("../lib/fonts/Montserrat-Bold.ttf")
+  font-family: "MontSerrat Bold"
+
+@font-face
+  src: url("../lib/fonts/Segoe UI.ttf")
+  font-family: "Segoe UI"
+
+.segoe
+  font-family: "Segoe UI", sans-serif
+
+.montserrat
+  font-family: "Montserrat", sans-serif
+
+.montserratBold
+  font-family: "MontSerrat Bold", sans-serif
+
+.segoeuil
+  font-family: "Segoe UI Light", "Open Sans", sans-serif
+
+.openSans
+  font-family: "Open Sans", "Segoe UI Light", sans-serif
+
+.openSansBold
+  font-family: "Open Sans Bold", sans-serif
+
+.eButton
+  display: inline-block
+  padding: 10px 20px
+  border-radius: 7px
+  color: white
+  &.blue
+    background-color: #003366
+  &:hover
+    color: white
+  &:visited
+    color: white
+  @extend .noUnderline
+  &.flat
+    border-radius: 0
+
+.eDataTable
+  width: 100%
+  border-collapse: collapse
+  border: 1px solid #dddddd
+  background-color: white
+  border-radius: 9px
+  &.invisible
+    display: none
+    *
+      display: none
+  &.wideTable
+    width: 2500px
+  &.scrollDown
+    min-height: 200px
+    width: 100%
+    overflow-y: scroll
+  &.zebra
+    tbody
+      tr:nth-of-type(even):not(.changed)
+        background-color: #e8e8e8
+        &:hover
+          background-color: #80CBC4
+          color: white
+      tr
+        &:hover
+          background-color: #80CBC4
+          color: white
+          cursor: pointer
+  &.borderTop
+    border-top: 5px solid #80CBC4
+    tr
+      border-bottom: 2px solid #e8e8e8
+    tbody
+      tr:hover
+        background-color: #80CBC4
+        td:not(:first-of-type)
+          color: white
+  &.borderRight
+    tr
+      th:last-of-type, td:last-of-type
+        border-right: 5px solid #80cbc4
+      th:last-of-type
+        border-radius: 0 9px 0 0
+      &:last-of-type
+        td:last-of-type
+          border-radius: 0 0 9px 0
+      border-bottom: 2px solid #e8e8e8
+  &.borderLeft
+    tr
+      th:first-of-type, td:first-of-type
+        border-left: 5px solid #80cbc4
+      th:first-of-type
+        border-radius: 0 9px 0 0
+      &:first-of-type
+        td:first-of-type
+          border-radius: 0 0 9px 0
+      border-bottom: 2px solid #e8e8e8
+    tbody
+      tr:hover
+        background-color: #80CBC4
+        td:not(:first-of-type)
+          color: white
+  td, th
+    padding: 10px
+  th
+    padding-top: 20px
+    padding-bottom: 20px
+  &.scroll
+    overflow-y: scroll
+
+.tooltip
+  font-family: "Montserrat", "Open Sans", sans-serif
+
+.redFont
+  color: #cc0000
+
+.ericModal
+  @extend .fullScreen
+  position: fixed
+  display: flex
+  align-items: center
+  justify-content: center
+  top: 0
+  left: 0
+  z-index: 99999
+  background-color: rgba(0, 0, 0, 0.4)
+  overflow-y: scroll
+  &.invisible
+    display: none
+  &.visible
+    display: flex
+  .header
+    border-bottom: 2px solid #d5d5d5
+  .body
+    padding-top: 30px
+
+.marginBottom
+  margin-bottom: 30px
+
+.generatePin
+  color: white
+  background-color: indianred
+
+.viewUnused
+  color: white
+  background-color: #80CBC4
+
+.clearFloatAfter
+  &::after
+    content: ''
+    display: block
+    clear: both
+
+.halfWidth
+  width: 80%
+
+.profilePicture
+  margin-top: 20px
+  margin-left: 10%
+
+.halfScreenVertical
+  width: 100vw
+  height: 50vh
+
+.halfScreenHorizontal
+  width: 50vw
+  height: 100vh
+
+.threeFourthScreenVertical
+  width: 100%
+  height: 80vh
+
+.threeFourthScreenWidth
+  width: 80%
+
+.paddingTop
+  margin-top: 30px
+
+.blockDisplay
+  display: block !important
+
+.tableDisplay
+  display: table
+
+.noMarginLeft
+  margin-left: 0 !important
+
+.centerSelf
+  margin: 0 auto
+
+div.hamburger
+  display: inline-block
+  vertical-align: middle
+  div
+    width: 25px
+    height: 4px
+    background-color: #E0E0E0
+    margin-bottom: 5px
+    border-radius: 90px
+  &.dark
+    div
+      background-color: #444444
+
+.noMarginRow
+  .row
+    margin-left: 0
+    margin-right: 0
+
+.largerLineHeight
+  line-height: 220%
+
+$classSlogWidth: percentWidth
+$classSlogHeight: percentHeight
+
+@for $i from 1 through 100
+  .#{$classSlogWidth}-#{$i}
+    width: 0% + $i
+  .#{$classSlogHeight}-#{$i}
+    height: 0% + $i
+
+.eModal
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 900
+  background-color: rgba(0, 0, 0, 0.55)
+  justify-content: center
+  align-items: center
+  opacity: 0
+  display: none
+  +transition(1s)
+  &.show, &.view
+    display: flex
+  &.fadeIn
+    opacity: 1
+  .content
+    background-color: white
+    position: relative
+    z-index: 901
+    border-radius: 9px
+    padding: 30px 15px
+    width: 60%
+    max-height: 90vh
+    overflow-y: hidden
+    margin-bottom: 15px
+    .modalBody
+      width: 100%
+      overflow-y: auto
+      max-height: 70vh
+      padding: 15px 15px 90%
+    .modalHead
+      padding: 15px 15px
+      width: 100%
+      border-bottom: 1px solid #ddd
+.clickedDiv
+  cursor: pointer
+@media only screen and (max-width: 500px)
+  .eModal .content
+    width: 90%
+@media only screen and (min-width: 1000px)
+  .eModal .content
+    width: 40%
+

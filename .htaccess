@@ -1,0 +1,16 @@
+
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+    Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+<filesMatch ".(css|js)$">
+    Header set Cache-Control "max-age=604800, public"
+</filesMatch>
+
+Options -Indexes
+
+DirectoryIndex index.php index.html
+
+#ErrorDocument 404 /ericmcwinner/errors/404.php
+#ErrorDocument 403 /ericmcwinner/errors/403.php
+
+ErrorDocument 404 /errors/404.php

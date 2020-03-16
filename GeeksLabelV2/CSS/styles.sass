@@ -1,0 +1,165 @@
+/**
+  * Geek Label's Main Stylesheet for Compucorp
+  *
+  * Built by Eric Aprioku AKA Eric McwinNEr
+  *
+  * 13-07-2017
+  **/
+/*VARIABLE & CLASS DEFINITIONS*/
+$fontZ: 'Zilla Slab', serif
+$fontP: 'PT Sans', sans-serif
+p
+  color: #414042
+a.bottom
+  position: absolute
+  bottom: 3vh
+  left: 50%
+  margin-left: -25px
+  width: 50px
+  height: 50px
+  z-index: 1
+img.godown
+  width: 50px
+  height: 50px
+  &.black
+    filter: invert(100%)  ///Make white image button black to reduce images loaded
+.title
+  font-family: $fontZ
+  font-size: 70px
+  margin-bottom: 5px
+  margin-top: 3vh
+/*VARIABLE AND CLASS DEFINITIONS END*/
+/*FIRST SLIDE STYLESHEETS*/
+div#first-slide
+  width: 100%
+  background-color: #e33f5f
+  position: relative
+  box-sizing: border-box
+  .logocontainer
+    img#logo
+      width: 50%
+    p
+      font-size: 24px
+      font-weight: 100
+      font-family: $fontP
+      margin-top: 10vh
+      color: #FCEEF0
+/*FIRST SLIDE STYLESHEETS END*/
+/*SECOND, THIRD AND FOURTH SLIDES STYLESHEETS START*/
+.greyslide
+  width: 100%
+  background-color: #f1f2f2
+  position: relative
+  box-sizing: border-box
+  .illustration
+    width: 75%
+  p
+    margin-top: 10vh
+    font:
+      family: $fontP
+      size: 30px
+    span:not([class*="hidden"])
+      color: #e33f5f
+/*SECOND, THIRD AND FOURTH SLIDES STYLESHEETS END*/
+/*FIFTH SLIDE STYLES START*/
+#fifth-slide
+  @extend .greyslide
+  background-color: white
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  .serviceicons
+    width: 74% ///Icons of the fifth-slide showing services Geeks Label offers
+  p
+    margin-top: 8vh
+    font:
+      family: $fontP
+      size: 22px
+    color: #414042
+  p.title
+    @extend .title
+
+/*FIFTH SLIDE STYLES END*/
+/*SIXTH SLIDE STYLES START*/
+#sixth-slide
+  @extend .greyslide
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  p.title
+    @extend .title
+    margin-bottom: 10vh
+  .row
+    position: relative
+  .buttoncontrol
+    color: #666
+    font-size: 21px
+    position: absolute
+    top: 50%
+  #prevbutton
+    left: 0
+  #nextbutton
+    right: 0
+/*SIXTH SLIDE STYLES END*/
+/*SEVENTH SLIDE STYLES START*/
+#seventh-slide
+  @extend .greyslide
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  p.title
+    @extend .title
+    margin-bottom: 4vh
+  div.container-fluid
+    padding: 0
+  div.full-width
+    width: 100%
+    img#findus
+      width: 100%
+/*SEVENTH SLIDE STYLES END*/
+/*LAST SLIDE[CONTACT] STYLES START*/
+#last-slide
+  @extend .greyslide
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  p
+    margin-top: 10vh
+    font:
+      family: $fontP
+      size: 30px
+  .row
+    margin-top: 5vh
+    p.phonelargescreen
+      font:
+        family: $fontP
+        size: 22px
+      margin-top: 4vh
+  p.title
+    @extend .title
+    color: #414042
+  .ericfield
+    width: 85%
+    background-color: #FBFBFB
+    border: 2px solid #CBCBCB
+    font-family: $fontP
+    font-size: 25px
+    padding: 1.5%
+    margin-top: 1.5vh
+    margin-bottom: 1.5vh
+    box-sizing: border-box
+  .ericfield::placeholder
+    color: #000
+  .ericsubmit
+    background-color: #e33f5f
+    color: white
+    border: none
+  .ericarea
+    min-height: 25vh
+    max-width: 85%
+    min-width: 85%
+  @media screen and (-webkit-min-device-pixel-ratio: 0)
+    /*Chrome Browser*/
+    .ericfield::placeholder
+      color: #888
+/*LAST SLIDE STYLES END*/
